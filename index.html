@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smileworks Dental Clinic | Premium Dental Care in Shimla</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;family=Cormorant+Garamond:wght@600;700&amp;display=swap" rel="stylesheet">
+  <script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#0F3B67',
+        accent: '#00A8E8',
+        light: '#F8FAFB',
+        border: '#E5E7EB',
+      }
+    }
+  }
+}
+</script>
+  <style>
+html, body { height: 100%; margin: 0; }
+* { font-family: 'Sora', sans-serif; }
+.font-display { font-family: 'Cormorant Garamond', serif; }
+.fade-up { opacity: 0; transform: translateY(30px); animation: fadeUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.gallery-item { transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.gallery-item:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(15, 59, 103, 0.15); }
+.cta-btn { transition: all 0.3s ease; }
+.cta-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0, 168, 232, 0.3); }
+.social-icon { transition: all 0.3s ease; }
+.social-icon:hover { transform: translateY(-4px); }
+.card-hover { transition: all 0.3s ease; }
+.card-hover:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(15, 59, 103, 0.1); }
+.logo-badge img,
+.gallery-image,
+.hero-visual-image,
+.feature-icon-image { display: block; }
+.logo-badge img,
+.gallery-image,
+.hero-visual-image { width: 100%; height: 100%; object-fit: cover; }
+.hero-visual-image { border-radius: 1.5rem; box-shadow: 0 24px 50px rgba(15, 59, 103, 0.18); }
+.feature-icon-image { width: 2.5rem; height: 2.5rem; object-fit: contain; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app" class="w-full bg-white text-gray-900"><!-- Navbar -->
+   <nav class="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
+    <div class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
+     <div class="flex items-center gap-3">
+      <div class="logo-badge w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white ring-1 ring-primary/10 shadow-sm">
+       <img src="assets/images/branding/logo-icon.png" alt="Smileworks Dental Clinic logo" loading="eager">
+      </div>
+      <div>
+       <h1 class="font-bold text-lg text-primary">Smileworks</h1>
+       <p class="text-xs text-gray-500">Dental Clinic</p>
+      </div>
+     </div><a href="https://wa.me/919459037488" target="_blank" rel="noopener noreferrer" class="cta-btn bg-accent text-white text-sm font-semibold px-6 py-2.5 rounded-lg flex items-center gap-2 hover:shadow-lg"> <i data-lucide="phone" style="width:16px;height:16px;"></i> Book Appointment </a>
+    </div>
+   </nav><!-- Hero -->
+   <section class="relative overflow-hidden bg-gradient-to-br from-white via-light to-white pt-12 pb-24">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row items-center gap-12">
+     <div class="flex-1 fade-up">
+      <p class="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Welcome to Excellence</p>
+      <h1 id="heroTitle" class="font-display text-5xl md:text-6xl font-bold leading-tight text-primary mb-6">Your Best Smile Starts Here</h1>
+      <p id="heroSubtitle" class="text-gray-600 text-lg md:text-xl max-w-lg mb-8 leading-relaxed">Gentle, modern dental care designed around your comfort in the heart of Summer Hill. We make every visit a positive experience.</p><a href="https://wa.me/919459037488" target="_blank" rel="noopener noreferrer" class="cta-btn inline-flex items-center gap-2 bg-accent text-white font-semibold px-8 py-4 rounded-lg text-lg"> Schedule Now <i data-lucide="arrow-right" style="width:20px;height:20px;"></i> </a>
+     </div>
+     <div class="flex-1 fade-up stagger-2 relative">
+      <div class="relative w-full max-w-sm mx-auto">
+       <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/5 rounded-3xl blur-3xl"></div>
+       <div class="relative bg-gradient-to-br from-primary/5 to-accent/10 rounded-3xl p-8 border border-accent/20">
+        <img src="assets/images/hero/hero-visual.png" alt="Smiling patient hero visual for Smileworks Dental Clinic" class="hero-visual-image aspect-square mb-8" loading="eager">
+        <div class="space-y-6">
+         <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0"><i data-lucide="check-circle" style="width:24px;height:24px;color:#00A8E8;"></i>
+          </div>
+          <div>
+           <p class="font-semibold text-primary">Pain-Free Care</p>
+           <p class="text-sm text-gray-600">Comfortable treatments</p>
+          </div>
+         </div>
+         <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0"><i data-lucide="zap" style="width:24px;height:24px;color:#00A8E8;"></i>
+          </div>
+          <div>
+           <p class="font-semibold text-primary">Modern Technology</p>
+           <p class="text-sm text-gray-600">Latest equipment</p>
+          </div>
+         </div>
+         <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0"><i data-lucide="heart" style="width:24px;height:24px;color:#00A8E8;"></i>
+          </div>
+          <div>
+           <p class="font-semibold text-primary">Expert Team</p>
+           <p class="text-sm text-gray-600">Caring professionals</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Info Cards -->
+   <section class="max-w-6xl mx-auto px-5 pb-16">
+    <div class="grid md:grid-cols-2 gap-6">
+     <div class="bg-white border border-border rounded-2xl p-8 card-hover fade-up stagger-1 shadow-sm">
+      <div class="flex items-start gap-4 mb-6">
+       <div class="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0"><i data-lucide="clock" style="width:24px;height:24px;color:#0F3B67;"></i>
+       </div>
+       <h3 class="font-bold text-xl text-primary">Working Hours</h3>
+      </div>
+      <div class="space-y-4">
+       <div class="flex justify-between items-center py-3 border-b border-border"><span class="text-gray-600">Monday – Saturday</span> <span class="font-semibold text-primary">10:30 AM – 6:00 PM</span>
+       </div>
+       <div class="flex justify-between items-center py-3"><span class="text-gray-600">Sunday</span> <span class="font-semibold text-red-500">Closed</span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gradient-to-br from-primary to-primary/90 rounded-2xl p-8 text-white card-hover fade-up stagger-2 shadow-lg min-h-[220px] flex flex-col justify-between">
+      <div>
+       <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center mb-4"><i data-lucide="calendar" style="width:24px;height:24px;color:white;"></i>
+       </div>
+       <h3 class="font-bold text-2xl mb-3">Ready for Your Checkup?</h3>
+       <p class="text-white/90 mb-4">Schedule your appointment with us today. Our friendly team is ready to help you achieve your best smile.</p>
+       <p class="font-semibold">📞 <span id="phoneBooking">+91 94590 37488</span></p>
+      </div>
+      <div class="flex items-center gap-3 mt-6 pt-6 border-t border-white/20">
+       <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center"><i data-lucide="check" style="width:20px;height:20px;color:white;"></i>
+       </div><span class="text-sm font-medium">Click the WhatsApp button to book now</span>
+      </div>
+     </div>
+    </div>
+   </section><!-- About -->
+   <section class="bg-light py-20">
+    <div class="max-w-6xl mx-auto px-5">
+     <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+       <p class="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Our Mission</p>
+       <h2 id="aboutTitle" class="font-display text-4xl md:text-5xl font-bold text-primary mb-6">About Us</h2>
+       <p id="aboutText" class="text-gray-600 leading-relaxed mb-8 text-lg">We believe everyone deserves a healthy, confident smile. Located conveniently in the Summer Hill Main Market, Smileworks Dental Clinic blends cutting-edge technology with a warm, welcoming atmosphere. From routine cleanings to specialized treatments, our experienced team treats every patient like family, ensuring the Shimla community receives the highest standard of dental care.</p>
+       <div class="flex gap-8">
+        <div>
+         <p class="text-3xl font-bold text-accent">10+</p>
+         <p class="text-sm text-gray-600 mt-1 font-medium">Years of Excellence</p>
+        </div>
+        <div>
+         <p class="text-3xl font-bold text-accent">2k+</p>
+         <p class="text-sm text-gray-600 mt-1 font-medium">Happy Patients</p>
+        </div>
+        <div>
+         <p class="text-3xl font-bold text-accent">5★</p>
+         <p class="text-sm text-gray-600 mt-1 font-medium">Highly Rated</p>
+        </div>
+       </div>
+      </div>
+      <div class="fade-up stagger-2">
+       <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <div class="grid grid-cols-2 gap-4">
+         <div class="bg-light rounded-xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-accent/10 flex items-center justify-center"><i data-lucide="tooth" style="width:24px;height:24px;color:#0F3B67;"></i>
+          </div>
+          <p class="font-medium text-primary text-sm">General Checkup</p>
+         </div>
+         <div class="bg-light rounded-xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-accent/10 flex items-center justify-center"><i data-lucide="shield" style="width:24px;height:24px;color:#0F3B67;"></i>
+          </div>
+          <p class="font-medium text-primary text-sm">Prevention Care</p>
+         </div>
+         <div class="bg-light rounded-xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-accent/10 flex items-center justify-center"><i data-lucide="sparkles" style="width:24px;height:24px;color:#0F3B67;"></i>
+          </div>
+          <p class="font-medium text-primary text-sm">Whitening</p>
+         </div>
+         <div class="bg-light rounded-xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-accent/10 flex items-center justify-center"><i data-lucide="crown" style="width:24px;height:24px;color:#0F3B67;"></i>
+          </div>
+          <p class="font-medium text-primary text-sm">Implants</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Why Choose Us -->
+   <section class="py-20">
+    <div class="max-w-6xl mx-auto px-5">
+     <div class="text-center mb-16 fade-up">
+      <p class="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Our Difference</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-primary">Why Choose Smileworks</h2>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+     <div class="bg-white border border-border rounded-2xl p-8 card-hover fade-up stagger-1 shadow-sm">
+       <div class="w-14 h-14 mb-4 rounded-xl bg-accent/10 flex items-center justify-center overflow-hidden">
+        <img src="assets/images/features/gentle-care.png" alt="Gentle Care icon" class="feature-icon-image" loading="lazy">
+       </div>
+       <h4 class="font-bold text-lg text-primary mb-2">Gentle Care</h4>
+       <p class="text-gray-600">Pain-free procedures focused on patient comfort</p>
+      </div>
+      <div class="bg-white border border-border rounded-2xl p-8 card-hover fade-up stagger-2 shadow-sm">
+       <div class="w-14 h-14 mb-4 rounded-xl bg-accent/10 flex items-center justify-center overflow-hidden">
+        <img src="assets/images/features/modern-tools.png" alt="Modern Tools icon" class="feature-icon-image" loading="lazy">
+       </div>
+       <h4 class="font-bold text-lg text-primary mb-2">Modern Tools</h4>
+       <p class="text-gray-600">Latest dental technology for precise results</p>
+      </div>
+      <div class="bg-white border border-border rounded-2xl p-8 card-hover fade-up stagger-3 shadow-sm">
+       <div class="w-14 h-14 mb-4 rounded-xl bg-accent/10 flex items-center justify-center overflow-hidden">
+        <img src="assets/images/features/caring-hands.png" alt="Caring Hands icon" class="feature-icon-image" loading="lazy">
+       </div>
+       <h4 class="font-bold text-lg text-primary mb-2">Caring Hands</h4>
+       <p class="text-gray-600">Compassionate, experienced team you can trust</p>
+      </div>
+      <div class="bg-white border border-border rounded-2xl p-8 card-hover fade-up stagger-4 shadow-sm">
+       <div class="w-14 h-14 mb-4 rounded-xl bg-accent/10 flex items-center justify-center overflow-hidden">
+        <img src="assets/images/features/happy-results.png" alt="Happy Results icon" class="feature-icon-image" loading="lazy">
+       </div>
+       <h4 class="font-bold text-lg text-primary mb-2">Happy Results</h4>
+       <p class="text-gray-600">Building healthy smiles that last a lifetime</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Gallery -->
+   <section class="bg-light py-20">
+    <div class="max-w-6xl mx-auto px-5">
+     <div class="text-center mb-16 fade-up">
+      <p class="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Our Space</p>
+     <h2 class="font-display text-4xl md:text-5xl font-bold text-primary">Experience Our Clinic</h2>
+     </div>
+     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="gallery-item rounded-xl overflow-hidden aspect-square border border-border bg-white"><img src="assets/images/gallery/reception-area.png" alt="Reception area at Smileworks Dental Clinic" class="gallery-image" loading="lazy">
+      </div>
+      <div class="gallery-item rounded-xl overflow-hidden aspect-square border border-border bg-white"><img src="assets/images/gallery/treatment-room.png" alt="Treatment room at Smileworks Dental Clinic" class="gallery-image" loading="lazy">
+      </div>
+      <div class="gallery-item rounded-xl overflow-hidden aspect-square border border-border bg-white"><img src="assets/images/gallery/lab-equipment.png" alt="Lab and equipment at Smileworks Dental Clinic" class="gallery-image" loading="lazy">
+      </div>
+      <div class="gallery-item rounded-xl overflow-hidden aspect-square border border-border bg-white"><img src="assets/images/gallery/our-team.png" alt="Smileworks Dental Clinic team" class="gallery-image" loading="lazy">
+      </div>
+      <div class="gallery-item rounded-xl overflow-hidden aspect-square border border-border bg-white"><img src="assets/images/gallery/waiting-area.png" alt="Waiting area at Smileworks Dental Clinic" class="gallery-image" loading="lazy">
+      </div>
+      <div class="gallery-item rounded-xl overflow-hidden aspect-square border border-border bg-white"><img src="assets/images/gallery/happy-results.png" alt="Happy Smileworks Dental Clinic treatment results" class="gallery-image" loading="lazy">
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact -->
+   <section class="py-20">
+    <div class="max-w-6xl mx-auto px-5">
+     <div class="text-center mb-16 fade-up">
+      <p class="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Get in Touch</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-primary">Contact Us</h2>
+     </div>
+     <div class="grid md:grid-cols-2 gap-8">
+      <div class="space-y-5 fade-up stagger-1">
+       <div class="flex items-center gap-4 bg-light rounded-xl p-6 card-hover border border-border">
+        <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0"><i data-lucide="phone" style="width:20px;height:20px;color:white;"></i>
+        </div>
+        <div>
+         <p class="text-xs text-gray-500 font-medium">Call Us</p>
+         <p id="phoneDisplay" class="font-bold text-primary text-lg">+91 94590 37488</p>
+        </div>
+       </div>
+       <div class="flex items-center gap-4 bg-light rounded-xl p-6 card-hover border border-border">
+        <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0"><i data-lucide="map-pin" style="width:20px;height:20px;color:white;"></i>
+        </div>
+        <div>
+         <p class="text-xs text-gray-500 font-medium">Visit Us</p>
+         <p id="addressDisplay" class="font-bold text-primary">Summer Hill Main Market, Shimla</p>
+        </div>
+       </div>
+       <div class="flex items-center gap-4 bg-light rounded-xl p-6 card-hover border border-border">
+        <div class="w-12 h-12 rounded-lg bg-accent flex items-center justify-center flex-shrink-0"><i data-lucide="mail" style="width:20px;height:20px;color:white;"></i>
+        </div>
+        <div>
+         <p class="text-xs text-gray-500 font-medium">Email Us</p>
+         <p class="font-bold text-primary">hello@smileworks.com</p>
+        </div>
+       </div>
+      </div>
+      <div class="fade-up stagger-2">
+       <div class="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 h-full flex flex-col justify-center border border-border">
+        <p class="font-bold text-lg text-primary mb-2">Follow Our Updates</p>
+        <p class="text-gray-600 mb-8">Connect with us on social media for dental tips, success stories, and special offers</p>
+        <div class="flex gap-3 flex-wrap"><a href="https://wa.me/919459037488" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-lg bg-white border border-border flex items-center justify-center text-primary font-bold text-lg hover:bg-accent hover:text-white" aria-label="WhatsApp"> <i data-lucide="message-circle" style="width:20px;height:20px;"></i> </a> <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-lg bg-white border border-border flex items-center justify-center text-primary font-bold text-lg hover:bg-accent hover:text-white" aria-label="Instagram"> <i data-lucide="instagram" style="width:20px;height:20px;"></i> </a> <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-lg bg-white border border-border flex items-center justify-center text-primary font-bold text-lg hover:bg-accent hover:text-white" aria-label="Facebook"> <i data-lucide="facebook" style="width:20px;height:20px;"></i> </a> <a href="tel:+919459037488" class="social-icon w-12 h-12 rounded-lg bg-white border border-border flex items-center justify-center text-primary font-bold text-lg hover:bg-accent hover:text-white" aria-label="Call us"> <i data-lucide="phone" style="width:20px;height:20px;"></i> </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="bg-primary text-white py-10">
+    <div class="max-w-6xl mx-auto px-5 text-center">
+     <div class="flex items-center justify-center gap-3 mb-4">
+      <div class="logo-badge w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-white/10 ring-1 ring-white/15">
+       <img src="assets/images/branding/logo-icon.png" alt="Smileworks Dental Clinic logo" loading="lazy">
+      </div><span class="font-bold text-lg">Smileworks Dental Clinic</span>
+     </div>
+     <p id="footerText" class="text-white/80 text-sm">© 2026 Smileworks Dental Clinic. All rights reserved.</p>
+    </div>
+   </footer><!-- Floating WhatsApp --> <a href="https://wa.me/919459037488" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110" aria-label="Chat on WhatsApp"> <i data-lucide="message-circle" style="width:24px;height:24px;color:white;"></i> </a>
+  </div>
+  <script>
+const defaultConfig = {
+  hero_title: 'Your Best Smile Starts Here',
+  hero_subtitle: 'Gentle, modern dental care designed around your comfort in the heart of Summer Hill. We make every visit a positive experience.',
+  about_title: 'About Us',
+  about_text: 'We believe everyone deserves a healthy, confident smile. Located conveniently in the Summer Hill Main Market, Smileworks Dental Clinic blends cutting-edge technology with a warm, welcoming atmosphere. From routine cleanings to specialized treatments, our experienced team treats every patient like family, ensuring the Shimla community receives the highest standard of dental care.',
+  phone_number: '+91 94590 37488',
+  clinic_address: 'Summer Hill Main Market, Shimla',
+  footer_text: '© 2026 Smileworks Dental Clinic. All rights reserved.',
+  background_color: '#FFFFFF',
+  surface_color: '#F8FAFB',
+  text_color: '#0F3B67',
+  accent_color: '#00A8E8',
+  footer_color: '#0F3B67',
+  font_family: 'Sora',
+  font_size: 16
+};
+
+function applyConfig(config) {
+  const c = { ...defaultConfig, ...config };
+
+  document.getElementById('heroTitle').innerHTML = c.hero_title.replace(/\n/g,'<br>');
+  document.getElementById('heroSubtitle').textContent = c.hero_subtitle;
+  document.getElementById('aboutTitle').textContent = c.about_title;
+  document.getElementById('aboutText').textContent = c.about_text;
+  document.getElementById('phoneDisplay').textContent = c.phone_number;
+  document.getElementById('phoneBooking').textContent = c.phone_number;
+  document.getElementById('addressDisplay').textContent = c.clinic_address;
+  document.getElementById('footerText').textContent = c.footer_text;
+
+  document.body.querySelector('#app').style.backgroundColor = c.background_color;
+  document.body.querySelector('#app').style.color = c.text_color;
+
+  const font = c.font_family || defaultConfig.font_family;
+  const stack = `${font}, 'Sora', sans-serif`;
+  document.body.style.fontFamily = stack;
+
+  const base = c.font_size || defaultConfig.font_size;
+  document.querySelectorAll('p, span, a, h4, li').forEach(el => {
+    if (!el.closest('.font-display')) el.style.fontSize = `${base}px`;
+  });
+  document.querySelectorAll('h1').forEach(el => el.style.fontSize = `${base * 2.5}px`);
+  document.querySelectorAll('h2').forEach(el => el.style.fontSize = `${base * 2}px`);
+  document.querySelectorAll('h3').forEach(el => el.style.fontSize = `${base * 1.25}px`);
+}
+
+if (window.elementSdk) {
+  window.elementSdk.init({
+    defaultConfig,
+    onConfigChange: async (config) => applyConfig(config),
+    mapToCapabilities: (config) => ({
+      recolorables: [
+        { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+        { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+        { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+        { get: () => config.accent_color || defaultConfig.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); } },
+        { get: () => config.footer_color || defaultConfig.footer_color, set: (v) => { config.footer_color = v; window.elementSdk.setConfig({ footer_color: v }); } },
+      ],
+      borderables: [],
+      fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
+      fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } },
+    }),
+    mapToEditPanelValues: (config) => new Map([
+      ['hero_title', config.hero_title || defaultConfig.hero_title],
+      ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+      ['about_title', config.about_title || defaultConfig.about_title],
+      ['about_text', config.about_text || defaultConfig.about_text],
+      ['phone_number', config.phone_number || defaultConfig.phone_number],
+      ['clinic_address', config.clinic_address || defaultConfig.clinic_address],
+      ['footer_text', config.footer_text || defaultConfig.footer_text],
+    ])
+  });
+}
+
+lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ecfebed30bea85a',t:'MTc3NjMwODIzNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
